@@ -2,7 +2,6 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
-  Index,
   JoinColumn,
   ManyToOne,
   Unique,
@@ -15,7 +14,6 @@ export class Reference {
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @Index({ unique: true })
   @Column({
     name: "ref",
     type: "varchar",

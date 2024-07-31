@@ -2,10 +2,10 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
-  Index,
   OneToMany,
   ManyToOne,
   JoinColumn,
+  Unique,
 } from "typeorm";
 import { Micrositie, PageDetail, Sitie } from "../public-api";
 
@@ -16,6 +16,7 @@ export enum ModeEnum {
 }
 
 @Entity({ name: "page", schema: "public" })
+@Unique(["path", "micrositieId"])
 export class Page {
   @PrimaryGeneratedColumn()
   id!: number;
@@ -27,12 +28,10 @@ export class Page {
   })
   name!: string;
 
-  @Index({ unique: true })
   @Column({
     name: "path",
     type: "varchar",
     nullable: false,
-    unique: true,
   })
   path!: string;
 
@@ -45,10 +44,11 @@ export class Page {
 
   @Column({
     name: "is_home_page",
-    type: "int",
+    type: "boolean",
     nullable: false,
+    default: false,
   })
-  isHomePage!: number;
+  isHomePage!: boolean;
 
   @Column({
     name: "status",
