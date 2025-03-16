@@ -20,6 +20,7 @@ import {
   Micrositie,
   Page,
   PageDetail,
+  Element as ElementCMS,
 } from "../../entities/public-api";
 
 const { dbHost, dbPort, dbUsername, dbPassword, dbDatabase, dbSynchronize } =
@@ -45,6 +46,7 @@ const entities = [
   Micrositie,
   Page,
   PageDetail,
+  ElementCMS,
 ];
 
 export class Database {
