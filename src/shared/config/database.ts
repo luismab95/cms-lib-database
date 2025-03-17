@@ -69,15 +69,16 @@ export class Database {
       database: dbDatabase,
     });
 
-    await client.connect();
-    await client.query(`CREATE SCHEMA IF NOT EXISTS security`);
-    await client.end();
-    console.log(`Esquema security creado`);
+    if (dbSynchronize === "true") {
+      await client.connect();
+      await client.query(`CREATE SCHEMA IF NOT EXISTS security`);
+      console.log(`Esquema security creado`);
+      await client.end();
+    }
   }
 
   public static async connect(): Promise<void> {
     try {
-      
       await this.ensureSchemaExists();
 
       this.postgresDataSource = new DataSource({
@@ -95,11 +96,6 @@ export class Database {
       if (!this.postgresDataSource.isInitialized) {
         await this.postgresDataSource.initialize();
         console.info("Conexión a la base de datos establecida");
-
-        await this.postgresDataSource.query(
-          `CREATE SCHEMA IF NOT EXISTS "security"`
-        );
-        console.info("Esquema creado");
       }
     } catch (error) {
       console.error("Error al conectar a la base de datos:", error);
