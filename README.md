@@ -12,7 +12,7 @@
 
 * [Installing](#installing)
 * [Building](#building)
-* [Linting](#license)
+* [License](#license)
 
 ## Installing
 
