@@ -9,5 +9,14 @@ export const ServerDbDisconnect = async () => {
   await Database.disconnect();
 };
 
-const { nodeEnv } = config.server;
-if (nodeEnv === "development") Database.connect();
+const startServer = async () => {
+  const { nodeEnv } = config.server;
+  if (nodeEnv === "development") await Database.connect();
+};
+
+startServer();
+
+process.on("SIGINT", async () => {
+  await Database.disconnect();
+  process.exit(0);
+});

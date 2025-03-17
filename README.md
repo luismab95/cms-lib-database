@@ -1,19 +1,18 @@
 <h1 align="center">LIB-DATABASE</h1>
 
 <p align="center">
-  Database lib for microservices using typeorm.
+  Database lib for CMS microservices using typeORM.
 </p>
 
 <p align="center">
-    <a href="https://bitbucket.org/_rgomez/lib-database.git">
+    <a href="https://github.com/luismab95/cms-lib-database.git">
 </p
 
 ## Table of Contents
 
 * [Installing](#installing)
 * [Building](#building)
-* [Testing](#testing)
-* [Linting](#linting)
+* [Linting](#license)
 
 ## Installing
 
@@ -29,3 +28,7 @@ npm install
 ```bash
 npm run build
 ```
+
+## License
+
+This project is licensed under the [MIT License].

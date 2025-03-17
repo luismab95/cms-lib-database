@@ -4,9 +4,8 @@
   "description": "Librería para entidades de base de datos con typeorm.",
   "author": "luismabg95@gmail.com",
   "private": true,
-  "license": "UNLICENSED",
-  "main": "src/main.js",
-  "types": "src/main.d.ts",
+  "license": "MIT",
+  "main": "src/main.ts",
   "scripts": {
     "start:dev": "tsnd --respawn src/main.ts",
     "build": "npm run build:clean && npm run build:tsc && npm run build:pack",
@@ -25,13 +24,14 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "typeorm": "^0.3.20",
-    "pg": "^8.11.3"
+    "pg": "^8.14.1",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@types/node": "^20.14.5",
+    "@types/pg": "^8.11.11",
+    "rimraf": "^5.0.5",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.2",
-    "rimraf": "^5.0.5"
+    "typescript": "^5.4.2"
   }
 }

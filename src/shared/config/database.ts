@@ -1,4 +1,5 @@
 import { DataSource } from "typeorm";
+import { Client } from "pg";
 import { config } from "../environments/load-env";
 import {
   Action,
@@ -23,8 +24,15 @@ import {
   Element as ElementCMS,
 } from "../../entities/public-api";
 
-const { dbHost, dbPort, dbUsername, dbPassword, dbDatabase, dbSynchronize } =
-  config.server;
+const {
+  dbHost,
+  dbPort,
+  dbUsername,
+  dbPassword,
+  dbDatabase,
+  dbSynchronize,
+  dbLogging,
+} = config.server;
 
 const entities = [
   Module,
@@ -52,8 +60,26 @@ const entities = [
 export class Database {
   private static postgresDataSource: DataSource;
 
+  public static async ensureSchemaExists() {
+    const client = new Client({
+      host: dbHost,
+      port: Number(dbPort),
+      user: dbUsername,
+      password: dbPassword,
+      database: dbDatabase,
+    });
+
+    await client.connect();
+    await client.query(`CREATE SCHEMA IF NOT EXISTS security`);
+    await client.end();
+    console.log(`Esquema security creado`);
+  }
+
   public static async connect(): Promise<void> {
     try {
+      
+      await this.ensureSchemaExists();
+
       this.postgresDataSource = new DataSource({
         type: "postgres",
         host: dbHost,
@@ -63,12 +89,17 @@ export class Database {
         database: dbDatabase,
         entities,
         synchronize: dbSynchronize === "true",
-        logging: false,
+        logging: dbLogging === "true",
       });
 
       if (!this.postgresDataSource.isInitialized) {
         await this.postgresDataSource.initialize();
-        console.log("Conexión a la base de datos establecida");
+        console.info("Conexión a la base de datos establecida");
+
+        await this.postgresDataSource.query(
+          `CREATE SCHEMA IF NOT EXISTS "security"`
+        );
+        console.info("Esquema creado");
       }
     } catch (error) {
       console.error("Error al conectar a la base de datos:", error);
@@ -86,7 +117,7 @@ export class Database {
   public static async disconnect(): Promise<void> {
     if (this.postgresDataSource) {
       await this.postgresDataSource.destroy();
-      console.log("Conexión a la base de datos cerrada");
+      console.info("Conexión a la base de datos cerrada");
     }
   }
 }
