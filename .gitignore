@@ -4,6 +4,9 @@
 /build
 package-lock.json
 
+# build
+lib-database-1.0.0.tar
+
 # Logs
 logs
 *.log
