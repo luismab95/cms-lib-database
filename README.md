@@ -17,9 +17,9 @@
 ## Installing
 
 ```bash
-nvm install 20.12.2
+nvm install 22.14.0
 nvm use
-npm install npm@10.5.0 -g
+npm install npm@10.9.2 -g
 npm install
 ```
 
