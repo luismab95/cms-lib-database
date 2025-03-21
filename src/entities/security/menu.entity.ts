@@ -63,13 +63,6 @@ export class Menu {
   })
   moduleId!: number;
 
-  @Column({
-    name: "actions",
-    type: "json",
-    nullable: false,
-  })
-  actions!: string[];
-
   @OneToMany(() => MenuRole, (menuRole) => menuRole.menu)
   menuRoles!: MenuRole[];
 
