@@ -21,6 +21,7 @@ import {
   Micrositie,
   Page,
   PageDetail,
+  PageReview,
   Element as ElementCMS,
 } from "../../entities/public-api";
 
@@ -55,6 +56,7 @@ const entities = [
   Page,
   PageDetail,
   ElementCMS,
+  PageReview,
 ];
 
 export class Database {

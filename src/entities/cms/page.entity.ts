@@ -7,13 +7,7 @@ import {
   JoinColumn,
   Unique,
 } from "typeorm";
-import { Micrositie, PageDetail, Sitie } from "../public-api";
-
-export enum ModeEnum {
-  EDIT = "edit",
-  PUBLISH = "publish",
-  REVIEW = "review",
-}
+import { Micrositie, PageDetail, PageReview, Sitie } from "../public-api";
 
 @Entity({ name: "page", schema: "public" })
 @Unique(["path", "micrositieId"])
@@ -66,15 +60,6 @@ export class Page {
   sitieId!: number;
 
   @Column({
-    name: "mode",
-    type: "enum",
-    enum: ModeEnum,
-    default: ModeEnum.REVIEW,
-    nullable: false,
-  })
-  mode!: ModeEnum;
-
-  @Column({
     name: "micrositie_id",
     type: "int",
     nullable: true,
@@ -83,6 +68,9 @@ export class Page {
 
   @OneToMany(() => PageDetail, (pageDetail) => pageDetail.page)
   pageDetails!: PageDetail[];
+
+  @OneToMany(() => PageReview, (pageReview) => pageReview.page)
+  pageReviews!: PageReview[];
 
   @ManyToOne(() => Sitie, (sitie) => sitie.pages)
   @JoinColumn({ name: "sitie_id" })

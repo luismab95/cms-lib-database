@@ -18,3 +18,4 @@ export { Micrositie } from "./cms/micrositie.entity";
 export { Page } from "./cms/page.entity";
 export { PageDetail } from "./cms/page_detail.entity";
 export { Element } from "./cms/element.entity";
+export { PageReview } from "./cms/page_review.entity";
