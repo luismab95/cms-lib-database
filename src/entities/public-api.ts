@@ -20,3 +20,4 @@ export { PageDetail } from "./cms/page_detail.entity";
 export { Element } from "./cms/element.entity";
 export { PageReview } from "./cms/page_review.entity";
 export { Notify } from "./cms/notify.entity";
+export { ReferenceReview } from "./cms/reference_review.entity";

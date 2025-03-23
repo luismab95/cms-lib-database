@@ -24,6 +24,7 @@ import {
   PageReview,
   Element as ElementCMS,
   Notify,
+  ReferenceReview,
 } from "../../entities/public-api";
 
 const {
@@ -59,6 +60,7 @@ const entities = [
   ElementCMS,
   PageReview,
   Notify,
+  ReferenceReview,
 ];
 
 export class Database {

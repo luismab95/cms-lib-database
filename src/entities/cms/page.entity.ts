@@ -7,7 +7,14 @@ import {
   JoinColumn,
   Unique,
 } from "typeorm";
-import { Micrositie, PageDetail, PageReview, Sitie } from "../public-api";
+import {
+  Micrositie,
+  PageDetail,
+  PageReview,
+  Reference,
+  ReferenceReview,
+  Sitie,
+} from "../public-api";
 
 @Entity({ name: "page", schema: "public" })
 @Unique(["path", "micrositieId"])
@@ -79,4 +86,13 @@ export class Page {
   @ManyToOne(() => Micrositie, (micrositie) => micrositie.pages)
   @JoinColumn({ name: "micrositie_id" })
   micrositie!: Micrositie;
+
+  @OneToMany(
+    () => ReferenceReview,
+    (referenceReview) => referenceReview.referenceReview
+  )
+  references!: ReferenceReview[];
+
+  @OneToMany(() => Reference, (reference) => reference.reference)
+  referencesC!: Reference[];
 }

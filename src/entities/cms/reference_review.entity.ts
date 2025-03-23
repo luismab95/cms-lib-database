@@ -8,9 +8,9 @@ import {
 } from "typeorm";
 import { Language, Page } from "../public-api";
 
-@Entity({ name: "reference", schema: "public" })
-@Unique(["ref", "languageId", "pageId"])
-export class Reference {
+@Entity({ name: "reference_review", schema: "public" })
+@Unique(["ref", "languageId","pageId"])
+export class ReferenceReview {
   @PrimaryGeneratedColumn()
   id!: number;
 
@@ -54,7 +54,7 @@ export class Reference {
   @JoinColumn({ name: "language_id" })
   language!: Language;
 
-  @ManyToOne(() => Page, (page) => page.referencesC)
+  @ManyToOne(() => Page, (page) => page.references)
   @JoinColumn({ name: "page_id" })
-  reference!: Page;
+  referenceReview!: Page;
 }
