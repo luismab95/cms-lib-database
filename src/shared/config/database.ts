@@ -23,6 +23,7 @@ import {
   PageDetail,
   PageReview,
   Element as ElementCMS,
+  Notify,
 } from "../../entities/public-api";
 
 const {
@@ -57,6 +58,7 @@ const entities = [
   PageDetail,
   ElementCMS,
   PageReview,
+  Notify,
 ];
 
 export class Database {

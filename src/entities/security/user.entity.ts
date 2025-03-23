@@ -7,7 +7,13 @@ import {
   JoinColumn,
   ManyToOne,
 } from "typeorm";
-import { LoginAttempt, OtpUser, PageReview, Role, Session } from "../public-api";
+import {
+  LoginAttempt,
+  OtpUser,
+  PageReview,
+  Role,
+  Session,
+} from "../public-api";
 
 @Entity({ name: "user", schema: "security" })
 export class User {

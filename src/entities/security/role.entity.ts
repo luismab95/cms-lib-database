@@ -7,7 +7,7 @@ import {
   JoinColumn,
   OneToMany,
 } from "typeorm";
-import { MenuRole, Permission, User } from "../public-api";
+import { MenuRole, Notify, Permission, User } from "../public-api";
 
 @Entity({ name: "role", schema: "security" })
 export class Role {
@@ -56,4 +56,7 @@ export class Role {
 
   @OneToMany(() => User, (user) => user.role)
   users!: User[];
+
+  @OneToMany(() => Notify, (notify) => notify.role)
+  notifies!: Notify[];
 }
