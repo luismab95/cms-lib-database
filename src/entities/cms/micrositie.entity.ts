@@ -7,7 +7,7 @@ import {
   ManyToOne,
   OneToMany,
 } from "typeorm";
-import { Page, Sitie } from "../public-api";
+import { Page, Sitie, Template } from "../public-api";
 
 @Entity({ name: "micrositie", schema: "public" })
 export class Micrositie {
@@ -54,6 +54,17 @@ export class Micrositie {
     nullable: false,
   })
   sitieId!: number;
+
+  @Column({
+    name: "template_id",
+    type: "int",
+    nullable: false,
+  })
+  templateId!: number;
+
+  @ManyToOne(() => Template, (template) => template.microsities)
+  @JoinColumn({ name: "template_id" })
+  template!: Template;
 
   @ManyToOne(() => Sitie, (sitie) => sitie.microsities)
   @JoinColumn({ name: "sitie_id" })

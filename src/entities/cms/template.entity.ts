@@ -6,6 +6,7 @@ import {
   OneToMany,
 } from "typeorm";
 import { Sitie } from "./sitie.entity";
+import { Micrositie } from "./micrositie.entity";
 
 @Entity({ name: "template", schema: "public" })
 export class Template {
@@ -45,4 +46,7 @@ export class Template {
 
   @OneToMany(() => Sitie, (sitie) => sitie.template)
   sities!: Sitie[];
+
+  @OneToMany(() => Micrositie, (micrositie) => micrositie.template)
+  microsities!: Sitie[];
 }
