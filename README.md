@@ -13,10 +13,14 @@
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Development](#development)
+- [Environment Variables](#environment-variables)
+- [Running the App](#running-the-app)
+- [Testing](#testing)
 - [Building](#building)
 - [Packaging](#packaging)
+- [Deployment](#deployment)
 - [Installing in Other Microservices](#installing-in-other-microservices)
+- [Resources](#resources)
 - [License](#license)
 
 ## Overview
@@ -61,35 +65,88 @@ Install the dependencies:
 pnpm install
 ```
 
-## Development
+## Environment Variables
 
-Start the project in development mode:
+Configure the environment variables required by the application before running it.
 
-```bash
-pnpm run start:dev
+Create a `.env` file in the project root if your configuration uses environment files (review .env.example).
+
+Example:
+
+```env
+NODE_ENV=development
+PORT=3000
 ```
 
-Run the configured tests:
+## Running the App
+
+### Development
+
+```bash
+pnpm start
+```
+
+### Watch Mode
+
+Automatically restart the application when files change:
+
+```bash
+pnpm start:dev
+```
+
+### Debug Mode
+
+```bash
+pnpm start:debug
+```
+
+### Production
+
+```bash
+pnpm start:prod
+```
+
+Build the application before running it in production:
+
+```bash
+pnpm build
+pnpm start:prod
+```
+## Testing
+
+### Unit Tests
 
 ```bash
 pnpm test
 ```
 
-Run the linter if configured:
+### Watch Mode
 
 ```bash
-pnpm lint
+pnpm test:watch
+```
+
+### End-to-End Tests
+
+```bash
+pnpm test:e2e
+```
+
+### Test Coverage
+
+```bash
+pnpm test:cov
 ```
 
 ## Building
 
-Compile the project:
+Compile the application:
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
-The compiled output is generated in the `dist/` directory, depending on the TypeScript and Nest CLI configuration.
+The compiled output is generated in the `dist` directory by the standard NestJS build configuration.
 
 ## Packaging
 
@@ -127,6 +184,29 @@ The exported names depend on the modules and services exposed by the library.
 
 When publishing a new version, update the library version, rebuild the package, and reinstall the new archive in the consuming microservices.
 
+## Deployment
+
+Before deploying to production:
+
+- Configure production environment variables.
+- Build the application using `pnpm build`.
+- Ensure dependencies are installed consistently using the committed `pnpm-lock.yaml`.
+- Configure the required database connections and external services.
+- Verify that authentication and authorization flows work correctly.
+- Configure logging, monitoring, and error handling.
+
+For additional information, see the [NestJS deployment documentation](https://docs.nestjs.com/deployment).
+
+## Resources
+
+- [NestJS Documentation](https://docs.nestjs.com)
+- [NestJS Official Website](https://nestjs.com)
+- [pnpm Documentation](https://pnpm.io)
+- [Node.js Documentation](https://nodejs.org/docs)
+- [CMS-MS-AUTH Repository](https://github.com/luismab95/cms-lib-database)
+
 ## License
+
+This project is licensed under the MIT License.
 
 See the [LICENSE](LICENSE) file for details.
