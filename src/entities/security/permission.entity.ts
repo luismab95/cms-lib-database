@@ -1,10 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, Relation } from 'typeorm';
+import { ScopeI } from '@shared/interfaces/scope.interface.js';
 import { Role } from './role.entity.js';
 
-export interface ScopeInterface {
-  effect: 'Allow' | 'Denny';
-  action: string[];
-}
 
 @Entity({ name: 'permission', schema: 'security' })
 export class Permission {
@@ -24,7 +21,7 @@ export class Permission {
     type: 'json',
     nullable: false,
   })
-  scope: ScopeInterface[];
+  scope: ScopeI[];
 
   @Column({
     name: 'status',
