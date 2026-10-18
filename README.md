@@ -1,16 +1,35 @@
-# LIB-DATABASE
+# CMS-LIB-DATABASE
+
+<p align="center">
+  <a href="https://nestjs.com/" target="_blank">
+    <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="NestJS Logo" />
+  </a>
+</p>
 
 <p align="center">
   Database library for CMS microservices built with NestJS 12, TypeScript, and TypeORM.
 </p>
 
 <p align="center">
-  <a href="https://github.com/luismab95/cms-lib-database.git">GitHub Repository</a>
+  <a href="https://github.com/luismab95/cms-lib-database">
+    <img src="https://img.shields.io/badge/NestJS-12-E0234E.svg" alt="NestJS 12" />
+  </a>
+  <a href="https://pnpm.io/">
+    <img src="https://img.shields.io/badge/package%20manager-pnpm-F69220.svg" alt="pnpm" />
+  </a>
+  <a href="https://github.com/luismab95/cms-ms-auth/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" />
+  </a>
 </p>
+
+## Overview
+
+`cms-lib-database` is a reusable library designed to centralize database-related functionality for CMS microservices.
+
+It is built with NestJS 12 and TypeScript and is intended to be shared across projects using TypeORM.
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
@@ -18,16 +37,10 @@
 - [Testing](#testing)
 - [Building](#building)
 - [Packaging](#packaging)
-- [Deployment](#deployment)
 - [Installing in Other Microservices](#installing-in-other-microservices)
 - [Resources](#resources)
 - [License](#license)
 
-## Overview
-
-`lib-database` is a reusable library designed to centralize database-related functionality for CMS microservices.
-
-It is built with NestJS 12 and TypeScript and is intended to be shared across projects using TypeORM.
 
 ## Prerequisites
 
@@ -177,25 +190,12 @@ pnpm add ./cms-lib-database-0.0.1.tgz
 Import the public exports from the package:
 
 ```typescript
-import { DatabaseModule } from 'cms-lib-database';
+import { ... } from 'cms-lib-database';
 ```
 
 The exported names depend on the modules and services exposed by the library.
 
 When publishing a new version, update the library version, rebuild the package, and reinstall the new archive in the consuming microservices.
-
-## Deployment
-
-Before deploying to production:
-
-- Configure production environment variables.
-- Build the application using `pnpm build`.
-- Ensure dependencies are installed consistently using the committed `pnpm-lock.yaml`.
-- Configure the required database connections and external services.
-- Verify that authentication and authorization flows work correctly.
-- Configure logging, monitoring, and error handling.
-
-For additional information, see the [NestJS deployment documentation](https://docs.nestjs.com/deployment).
 
 ## Resources
 

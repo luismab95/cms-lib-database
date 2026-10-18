@@ -1,7 +1,7 @@
 {
   "name": "cms-lib-database",
   "version": "0.0.1",
-  "description": "Librería para entidades de base de datos con typeorm.",
+  "description": "Library for database entities using TypeORM.",
   "author": "luismabg95@gmail.com",
   "license": "MIT",
   "repository": {
