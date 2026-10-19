@@ -7,9 +7,8 @@ import {
   Relation,
 } from 'typeorm';
 import { Page } from './page.entity.js';
-import { User } from '../public-api.js';
-
-export type PageReviewStatus = 'pending' | 'approved' | 'rejected';
+import { User } from '../index.js';
+import { PageReviewStatus } from '@shared/interfaces/page-review.interface.js';
 
 @Entity({ name: 'page_review', schema: 'public' })
 export class PageReview {

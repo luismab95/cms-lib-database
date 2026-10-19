@@ -17,7 +17,7 @@
   <a href="https://pnpm.io/">
     <img src="https://img.shields.io/badge/package%20manager-pnpm-F69220.svg" alt="pnpm" />
   </a>
-  <a href="https://github.com/luismab95/cms-ms-auth/blob/main/LICENSE">
+  <a href="https://github.com/luismab95/cms-lib-database/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" />
   </a>
 </p>
@@ -203,7 +203,7 @@ When publishing a new version, update the library version, rebuild the package, 
 - [NestJS Official Website](https://nestjs.com)
 - [pnpm Documentation](https://pnpm.io)
 - [Node.js Documentation](https://nodejs.org/docs)
-- [CMS-MS-AUTH Repository](https://github.com/luismab95/cms-lib-database)
+- [CMS-LIB-DATABASE Repository](https://github.com/luismab95/cms-lib-database)
 
 ## License
 

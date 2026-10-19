@@ -1,10 +1,5 @@
+import { TypeElementEnum } from '@shared/enums/element.enum.js';
 import { Entity, Column, PrimaryGeneratedColumn, Index } from 'typeorm';
-
-export enum TypeElementEnum {
-  HEADER = 'header',
-  BODY = 'body',
-  FOOTER = 'footer',
-}
 
 @Entity({ name: 'element', schema: 'public' })
 export class Element {

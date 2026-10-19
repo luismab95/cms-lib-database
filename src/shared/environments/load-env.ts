@@ -11,5 +11,10 @@ export const config = {
     dbDatabase: process.env.DB_DATABASE,
     dbSynchronize: process.env.DB_SYNCHRONIZE,
     dbLogging: process.env.DB_LOGGING,
+    mongoUri: process.env.MONGO_URI,
+    redisHost: process.env.REDIS_HOST,
+    redisPort: process.env.REDIS_PORT,
+    redisUsername: process.env.REDIS_USERNAME,
+    redisPassword: process.env.REDIS_PASSWORD,
   },
 };

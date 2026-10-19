@@ -26,7 +26,7 @@ import {
   Notify,
   ReferenceReview,
   PermissionSitie,
-} from '../../entities/public-api.js';
+} from '../../entities/index.js';
 
 const {
   dbHost,
