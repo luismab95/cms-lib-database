@@ -15,7 +15,7 @@ export class Initializer {
   hash: string;
 
   @Column({
-    name: 'user-pwd',
+    name: 'user_pwd',
     type: 'boolean',
     nullable: false,
     default: true,

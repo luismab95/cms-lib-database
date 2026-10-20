@@ -334,29 +334,33 @@ export async function PermissionSeeder(
     {
       id: 1,
       description: 'Admin',
-      scope:
+      scope: JSON.parse(
         '[{"effect": "Allow","action": ["1Y92kqNW","ykXK0H0U","1Y92kqNW","k98skpeq","ykXK0H0U","5fwbZLLU","36UZ0RQg","nrkF3VVI","61cGjjBh","tGZIuIJy","KjGSelQN","dVPwVfsd","YbvsOt1D","bl91z6ln","vPMaZlhD","g8OPBd52","ti3sLWHa","M2tvgxnG","M3PDTVb9","TBpcCd38","ZHlQ9KrH","04KyWbNE","mRmgLeE5","ohnPymiK","8JvU2adQ","6feAKEbQ","EPhy1acm","Av9GKwXr","UUyOxarc","IBULAcv6","mNrjFV4D","gQvc2kR3","v9bcjxCr","eMxnylbB","WW3mZKOi","qVy9ZdWg","g7pqWe97","V8isIxyj","pBCHggtI","P8zRlKsM","D909LuAx","g6U5KJ1n","pHsaJvoS","SlzdPrIk","AS23qw7F","lok98AS2"]}]',
+      ),
       status: true,
     },
     {
       id: 2,
       description: 'Design',
-      scope:
+      scope: JSON.parse(
         '[{"effect": "Allow","action": ["1Y92kqNW","ykXK0H0U","IBULAcv6","mNrjFV4D","D909LuAx","v9bcjxCr","eMxnylbB","ti3sLWHa","dVPwVfsd","YbvsOt1D","bl91z6ln","vPMaZlhD","g8OPBd52","WW3mZKOi","qVy9ZdWg","g7pqWe97","V8isIxyj","pBCHggtI","P8zRlKsM","Av9GKwXr","UUyOxarc"]}]',
+      ),
       status: true,
     },
     {
       id: 3,
       description: 'Editor',
-      scope:
+      scope: JSON.parse(
         '[{"effect": "Allow","action": ["1Y92kqNW","ykXK0H0U","IBULAcv6","mNrjFV4D","v9bcjxCr","ti3sLWHa","dVPwVfsd","YbvsOt1D","bl91z6ln","vPMaZlhD","g8OPBd52","WW3mZKOi","qVy9ZdWg","pBCHggtI","Av9GKwXr","UUyOxarc"]}]',
+      ),
       status: true,
     },
     {
       id: 4,
       description: 'Review',
-      scope:
+      scope: JSON.parse(
         '[{"effect": "Allow","action": ["1Y92kqNW","ykXK0H0U","Av9GKwXr","UUyOxarc","g6U5KJ1n","pHsaJvoS","SlzdPrIk"]}]',
+      ),
       status: true,
     },
   ] as unknown as Permission[];

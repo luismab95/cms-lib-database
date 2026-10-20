@@ -95,7 +95,7 @@ export async function TemplateSeeder(): Promise<void> {
                         name: 'Imagen',
                         config: {
                           image:
-                            'uploads\\2025\\junio\\57dc70c781386ffad5eb13c15289b401.png',
+                            'uploads\\2026\\octubre\\cecc89f6ae297bdcf7cf8b5d05adbcbe.png',
                         },
                         text: {
                           alt: 'Texto alternativo',

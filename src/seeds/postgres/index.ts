@@ -10,3 +10,4 @@ export * from './micrositie.seed.js';
 export * from './sitie.seed.js';
 export * from './page.seed.js';
 export * from './initializer.seed.js';
+export * from './file.seed.js';

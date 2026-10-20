@@ -59,7 +59,7 @@ export async function PageSeeder(): Promise<void> {
                         name: 'Imagen',
                         config: {
                           image:
-                            'uploads\\2025\\junio\\57dc70c781386ffad5eb13c15289b401.png',
+                            'uploads\\2026\\octubre\\cecc89f6ae297bdcf7cf8b5d05adbcbe.png',
                         },
                         text: {
                           alt: 'ewVpf0ImycZ5GAyO',
@@ -185,7 +185,7 @@ export async function PageSeeder(): Promise<void> {
                         name: 'Boton',
                         config: {
                           image:
-                            'uploads/2025/marzo/876adc1d939ebef4dcee7ea41153631a.svg',
+                            'uploads\\2026\\octubre\\562910ea74f9fb2eca8ff8807a768edc1.svg',
                           goTo: 'http://localhost:4200/admin',
                           target: '_blank',
                         },
@@ -245,7 +245,7 @@ export async function PageSeeder(): Promise<void> {
                         name: 'Imagen',
                         config: {
                           image:
-                            'uploads\\2025\\junio\\57dc70c781386ffad5eb13c15289b401.png',
+                            'uploads\\2026\\octubre\\cecc89f6ae297bdcf7cf8b5d05adbcbe.png',
                         },
                         text: {
                           alt: '6ZDbcdTtVcFG7CB7',
@@ -341,7 +341,7 @@ export async function PageSeeder(): Promise<void> {
                           goTo: 'http://localhost:4200/es/home',
                           target: '_self',
                           image:
-                            'uploads/2025/marzo/876adc1d939ebef4dcee7ea41153631a.svg',
+                            'uploads\\2026\\octubre\\562910ea74f9fb2eca8ff8807a768edc1.svg',
                         },
                         text: {
                           etiqueta: 'DDRVpRWQlaMGh0Wp',

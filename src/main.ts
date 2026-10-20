@@ -13,6 +13,7 @@ import {
   InitializarteSeeder,
   TemplateSeeder as TemplateSeederSql,
   PageSeeder as PageSeederSql,
+  FileSeeder,
 } from './seeds/postgres/index.js';
 import { Mongo } from '@shared/config/mongo.js';
 import { TemplateSeeder, PageSeeder } from './seeds/mongo/index.js';
@@ -37,6 +38,7 @@ const startServer = async () => {
       await MenuSeeder(cnx);
       await ParameterSeeder(cnx);
       await UserSeeder(cnx);
+      await FileSeeder(cnx);
       await ElementSeeder(cnx);
       await TemplateSeederSql(cnx);
       await SitieSeeder(cnx);
