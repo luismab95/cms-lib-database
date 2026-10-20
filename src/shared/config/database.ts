@@ -26,6 +26,7 @@ import {
   Notify,
   ReferenceReview,
   PermissionSitie,
+  Initializer,
 } from '../../entities/index.js';
 
 const {
@@ -63,6 +64,7 @@ const entities = [
   Notify,
   ReferenceReview,
   PermissionSitie,
+  Initializer
 ];
 
 export class Database {

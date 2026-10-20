@@ -1,3 +1,4 @@
+export { Initializer } from './security/initializer.entity.js';
 export { LoginAttempt } from './security/login-attempt.entity.js';
 export { MenuRole } from './security/menu-rol.entity.js';
 export { Menu } from './security/menu.entity.js';

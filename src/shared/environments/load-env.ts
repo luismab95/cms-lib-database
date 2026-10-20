@@ -10,6 +10,7 @@ export const config = {
     dbPassword: process.env.DB_PASSWORD,
     dbDatabase: process.env.DB_DATABASE,
     dbSynchronize: process.env.DB_SYNCHRONIZE,
+    dbSeeder: process.env.DB_SEEDER === 'true',
     dbLogging: process.env.DB_LOGGING,
     mongoUri: process.env.MONGO_URI,
     redisHost: process.env.REDIS_HOST,
