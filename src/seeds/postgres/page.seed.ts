@@ -580,6 +580,41 @@ export async function PageSeeder(dataSource: EntityManager): Promise<void> {
       languageId: 5,
       pageId: 2,
     },
+    {
+      id: 66,
+      ref: 'ewVpf0ImycZ5GAyO',
+      text: 'Logo principal',
+      languageId: 1,
+      pageId: 1,
+    },
+    {
+      id: 67,
+      ref: 'ewVpf0ImycZ5GAyO',
+      text: 'Main logo',
+      languageId: 2,
+      pageId: 1,
+    },
+    {
+      id: 68,
+      ref: 'ewVpf0ImycZ5GAyO',
+      text: 'Logo principal',
+      languageId: 3,
+      pageId: 1,
+    },
+    {
+      id: 69,
+      ref: 'ewVpf0ImycZ5GAyO',
+      text: 'Главный логотип',
+      languageId: 4,
+      pageId: 1,
+    },
+    {
+      id: 70,
+      ref: 'ewVpf0ImycZ5GAyO',
+      text: 'Hauptlogo',
+      languageId: 5,
+      pageId: 1,
+    },
   ] as unknown as Reference[];
 
   const resultReferences = await referenceRepository.save(references);
