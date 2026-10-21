@@ -14,6 +14,7 @@ import { PermissionSitie } from '../cms/permission-sitie.entity.js';
 import { OtpUser } from './otp-user.entity.js';
 import { Role } from './role.entity.js';
 import { PageReview } from '../cms/page_review.entity.js';
+import { Notify } from '../cms/notify.entity.js';
 
 @Entity({ name: 'user', schema: 'security' })
 export class User {
@@ -106,10 +107,16 @@ export class User {
   @OneToMany(() => OtpUser, (otpUser: OtpUser) => otpUser.user)
   otpUsers: OtpUser[];
 
+  @OneToMany(() => Notify, (notify: Notify) => notify.user)
+  notifies: Notify[];
+
   @ManyToOne(() => Role, (role: Role) => role.users)
   @JoinColumn({ name: 'role_id' })
   role: Role;
 
-  @OneToMany(() => PageReview, (pageReview) => pageReview.user)
-  pageReviews: Relation<PageReview[]>;
+  @OneToMany(() => PageReview, (pageReview) => pageReview.userChanges)
+  pageUserChanges: Relation<PageReview[]>;
+
+  @OneToMany(() => PageReview, (pageReview) => pageReview.userReview)
+  pageUserReviews: Relation<PageReview[]>;
 }

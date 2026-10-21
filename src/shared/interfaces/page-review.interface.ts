@@ -1,1 +1,1 @@
-export type PageReviewStatus = 'pending' | 'approved' | 'rejected';
+export type PageReviewStatus = 'pending' | 'assigned' | 'approved' | 'rejected';

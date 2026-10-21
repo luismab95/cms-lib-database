@@ -11,7 +11,6 @@ import {
 import { Permission } from './permission.entity.js';
 import { MenuRole } from './menu-rol.entity.js';
 import { User } from './user.entity.js';
-import { Notify } from '../cms/notify.entity.js';
 
 @Entity({ name: 'role', schema: 'security' })
 export class Role {
@@ -70,7 +69,4 @@ export class Role {
 
   @OneToMany(() => User, (user: User) => user.role)
   users: Relation<User[]>;
-
-  @OneToMany(() => Notify, (notify: Notify) => notify.role)
-  notifies: Relation<Notify[]>;
 }

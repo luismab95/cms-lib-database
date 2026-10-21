@@ -30,11 +30,12 @@ export class PageReview {
   comment: string;
 
   @Column({
-    name: 'status',
+    name: 'status_review',
     type: 'varchar',
     nullable: false,
+    default: 'pending',
   })
-  status: PageReviewStatus;
+  statusReview: PageReviewStatus;
 
   @Column({
     name: 'page_id',
@@ -42,19 +43,30 @@ export class PageReview {
     nullable: false,
   })
   pageId: number;
-  
+
   @Column({
-    name: 'user_id',
+    name: 'user_changes_id',
     type: 'int',
     nullable: false,
   })
-  userId: number;
+  userChangesId: number;
+
+  @Column({
+    name: 'user_review_id',
+    type: 'int',
+    nullable: true,
+  })
+  userReviewId: number;
 
   @ManyToOne(() => Page, (page: Page) => page.pageReviews)
   @JoinColumn({ name: 'page_id' })
   page: Relation<Page>;
 
-  @ManyToOne(() => User, (user) => user.pageReviews)
-  @JoinColumn({ name: 'user_id' })
-  user: Relation<User>;
+  @ManyToOne(() => User, (user) => user.pageUserReviews)
+  @JoinColumn({ name: 'user_review_id' })
+  userReview: Relation<User>;
+
+  @ManyToOne(() => User, (user) => user.pageUserChanges)
+  @JoinColumn({ name: 'user_changes_id' })
+  userChanges: Relation<User>;
 }
