@@ -8,7 +8,10 @@ import {
 } from 'typeorm';
 import { Page } from './page.entity.js';
 import { User } from '../index.js';
-import { PageReviewStatus } from '@shared/interfaces/page-review.interface.js';
+import {
+  PageReviewStatus,
+  ReviewCommentI,
+} from '@shared/interfaces/page-review.interface.js';
 
 @Entity({ name: 'page_review', schema: 'public' })
 export class PageReview {
@@ -28,6 +31,13 @@ export class PageReview {
     nullable: true,
   })
   comment: string;
+
+  @Column({
+    name: 'comments',
+    type: 'json',
+    nullable: true,
+  })
+  comments: ReviewCommentI[];
 
   @Column({
     name: 'status_review',
