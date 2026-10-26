@@ -132,7 +132,7 @@ export async function MenuSeeder(dataSource: EntityManager): Promise<void> {
       name: 'Revisión',
       path: 'content\/review-pages',
       icon: 'fa-solid fa-comments',
-      description: 'Gestiona y revisa los cambios realizados en las páginas del sitio o micrositio.',
+      description: 'Gestiona y revisa los cambios realizados en las páginas y plantillas del sitio o micrositio.',
       status: true,
       moduleId: 2,
     },

@@ -8,6 +8,9 @@ import {
 } from 'typeorm';
 import { Sitie } from './sitie.entity.js';
 import { Micrositie } from './micrositie.entity.js';
+import { PageReview } from './page_review.entity.js';
+import { ReferenceReview } from './reference_review.entity.js';
+import { Reference } from './reference.entity.js';
 
 @Entity({ name: 'template', schema: 'public' })
 export class Template {
@@ -50,4 +53,20 @@ export class Template {
 
   @OneToMany(() => Micrositie, (micrositie: Micrositie) => micrositie.template)
   microsities: Relation<Sitie[]>;
+
+  @OneToMany(() => PageReview, (pageReview: PageReview) => pageReview.template)
+  pageReviews: Relation<PageReview[]>;
+
+  @OneToMany(
+    () => ReferenceReview,
+    (referenceReview: ReferenceReview) =>
+      referenceReview.referenceTemplateReview,
+  )
+  references: Relation<ReferenceReview[]>;
+
+  @OneToMany(
+    () => Reference,
+    (reference: Reference) => reference.referenceTemplate,
+  )
+  referencesC: Relation<Reference[]>;
 }

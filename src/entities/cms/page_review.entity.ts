@@ -7,11 +7,13 @@ import {
   Relation,
 } from 'typeorm';
 import { Page } from './page.entity.js';
-import { User } from '../index.js';
 import {
-  PageReviewStatus,
+  PageReviewStatusT,
   ReviewCommentI,
+  TypeReviewT,
 } from '@shared/interfaces/page-review.interface.js';
+import { User } from '../security/user.entity.js';
+import { Template } from './template.entity.js';
 
 @Entity({ name: 'page_review', schema: 'public' })
 export class PageReview {
@@ -40,19 +42,34 @@ export class PageReview {
   comments: ReviewCommentI[];
 
   @Column({
+    name: 'type',
+    type: 'varchar',
+    nullable: false,
+    default: 'page',
+  })
+  type: TypeReviewT;
+
+  @Column({
     name: 'status_review',
     type: 'varchar',
     nullable: false,
     default: 'pending',
   })
-  statusReview: PageReviewStatus;
+  statusReview: PageReviewStatusT;
 
   @Column({
     name: 'page_id',
     type: 'int',
-    nullable: false,
+    nullable: true,
   })
   pageId: number;
+
+  @Column({
+    name: 'template_id',
+    type: 'int',
+    nullable: true,
+  })
+  templateId: number;
 
   @Column({
     name: 'user_changes_id',
@@ -71,6 +88,11 @@ export class PageReview {
   @ManyToOne(() => Page, (page: Page) => page.pageReviews)
   @JoinColumn({ name: 'page_id' })
   page: Relation<Page>;
+
+  
+  @ManyToOne(() => Template, (template: Template) => template.pageReviews)
+  @JoinColumn({ name: 'template_id' })
+  template: Relation<Template>;
 
   @ManyToOne(() => User, (user) => user.pageUserReviews)
   @JoinColumn({ name: 'user_review_id' })

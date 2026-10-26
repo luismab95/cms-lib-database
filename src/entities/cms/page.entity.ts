@@ -88,10 +88,10 @@ export class Page {
 
   @OneToMany(
     () => ReferenceReview,
-    (referenceReview: ReferenceReview) => referenceReview.referenceReview,
+    (referenceReview: ReferenceReview) => referenceReview.referencePageReview,
   )
   references: Relation<ReferenceReview[]>;
 
-  @OneToMany(() => Reference, (reference: Reference) => reference.reference)
+  @OneToMany(() => Reference, (reference: Reference) => reference.referencePage)
   referencesC: Relation<Reference[]>;
 }

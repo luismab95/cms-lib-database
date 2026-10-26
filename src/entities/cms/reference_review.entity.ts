@@ -7,8 +7,10 @@ import {
   Unique,
   Relation,
 } from 'typeorm';
+import { TypeReviewT } from '@shared/interfaces/page-review.interface.js';
 import { Language } from './language.entity.js';
 import { Page } from './page.entity.js';
+import { Template } from './template.entity.js';
 
 @Entity({ name: 'reference_review', schema: 'public' })
 @Unique(['ref', 'languageId', 'pageId'])
@@ -48,9 +50,24 @@ export class ReferenceReview {
   @Column({
     name: 'page_id',
     type: 'int',
-    nullable: false,
+    nullable: true,
   })
   pageId: number;
+
+  @Column({
+    name: 'template_id',
+    type: 'int',
+    nullable: true,
+  })
+  templateId: number;
+
+  @Column({
+    name: 'type',
+    type: 'varchar',
+    nullable: false,
+    default: 'page',
+  })
+  type: TypeReviewT;
 
   @ManyToOne(() => Language, (language: Language) => language.references)
   @JoinColumn({ name: 'language_id' })
@@ -58,5 +75,9 @@ export class ReferenceReview {
 
   @ManyToOne(() => Page, (page: Page) => page.references)
   @JoinColumn({ name: 'page_id' })
-  referenceReview: Relation<Page>;
+  referencePageReview: Relation<Page>;
+
+  @ManyToOne(() => Template, (template: Template) => template.references)
+  @JoinColumn({ name: 'template_id' })
+  referenceTemplateReview: Relation<Template>;
 }
