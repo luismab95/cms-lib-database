@@ -1,4 +1,7 @@
-import { TypeElementEnum } from '@shared/enums/element.enum.js';
+import {
+  ChildrenSchemaI,
+  ElementKindT,
+} from '@shared/interfaces/element.interface.js';
 import { Entity, Column, PrimaryGeneratedColumn, Index } from 'typeorm';
 
 @Entity({ name: 'element', schema: 'public' })
@@ -23,6 +26,14 @@ export class Element {
     nullable: false,
   })
   description: string;
+
+  @Column({
+    name: 'kind',
+    type: 'varchar',
+    nullable: false,
+    default: 'simple',
+  })
+  kind: ElementKindT;
 
   @Column({
     name: 'icon',
@@ -57,7 +68,15 @@ export class Element {
     type: 'json',
     nullable: true,
   })
-  type: TypeElementEnum[];
+  type: any[];
+
+  @Column({
+    name: 'children_schema',
+    type: 'json',
+    nullable: true,
+    default: [],
+  })
+  childrenSchema: ChildrenSchemaI[];
 
   @Column({
     name: 'status',

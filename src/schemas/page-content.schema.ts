@@ -1,4 +1,16 @@
-import { Schema } from "mongoose";
+import { Schema } from 'mongoose';
+
+const ChildrenSchema = new Schema(
+  {
+    uuid: {
+      type: String,
+    },
+    slot: {
+      type: String,
+    },
+  },
+  { _id: false },
+);
 
 const ElementSchema = new Schema(
   {
@@ -23,9 +35,22 @@ const ElementSchema = new Schema(
       of: Schema.Types.Mixed,
       default: {},
     },
+    childrenSchema: {
+      type: Array,
+      of: ChildrenSchema,
+      default: [],
+    },
   },
   { _id: false },
 );
+
+ElementSchema.add({
+  childrens: {
+    type: Array,
+    of: ElementSchema,
+    default: [],
+  },
+});
 
 const ColumnSchema = new Schema(
   {

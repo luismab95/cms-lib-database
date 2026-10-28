@@ -49,13 +49,13 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'dMHLnvZj',
-                      css: '.grid-column-dMHLnvZj {\n  display: block;\n  width: 100%;\n  height: auto;\n min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-dMHLnvZj {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'LwgODtkI',
-                        css: '.image-plugin-LwgODtkI {\n  display: block;\n  width: 150px;\n  height: 80px;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                        css: '.image-plugin-LwgODtkI {\n  display: block;\n  width: auto;\n  height: 80px;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
                         name: 'Imagen',
                         config: {
                           image:
@@ -64,6 +64,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           alt: 'ewVpf0ImycZ5GAyO',
                         },
+                        childrens: [],
                       },
                     },
                     {
@@ -105,6 +106,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           etiqueta: 'cGOn5HZQPxvAJcbz',
                         },
+                        childrens: [],
                       },
                     },
                     {
@@ -146,6 +148,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           parrafo: 'lq4duR8VvLjYUCbk',
                         },
+                        childrens: [],
                       },
                     },
                     {
@@ -175,23 +178,59 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'HTHlfQ3x',
-                      css: '.grid-column-HTHlfQ3x {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-HTHlfQ3x {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
-                        uuid: 'PirycQFW',
-                        css: '.button-plugin-PirycQFW {\n  display: flex;\n  width: auto;\n  height: auto;\n  min-height: 40px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-transform: uppercase;\n  background-color: #6200ea;\n  border-radius: 50px;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-PirycQFW:focus {\n  display: flex;\n  width: auto;\n  height: auto;\n  min-height: 40px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-transform: uppercase;\n  background-color: #6200ea;\n  border-radius: 50px;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  box-shadow: medium;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-PirycQFW:active {\n  display: flex;\n  width: auto;\n  height: auto;\n  min-height: 40px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-transform: uppercase;\n  background-color: #6200ea;\n  border-radius: 50px;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale(0.98);\n  transition: all 0.3s ease;\n  cursor: pointer;\n}',
-                        name: 'Boton',
+                        uuid: 'gU5HfD6u',
+                        css: '.button-plugin-gU5HfD6u {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-gU5HfD6u:hover {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale(0.98);\n  transition: all 0.3s ease;\n  cursor: pointer;\n}',
                         config: {
-                          image:
-                            'uploads\\2026\\octubre\\562910ea74f9fb2eca8ff8807a768edc1.svg',
                           goTo: 'http://localhost:4200/admin',
                           target: '_blank',
                         },
-                        text: {
-                          etiqueta: 'jvHda8rXe6aCxiML',
-                        },
+                        name: 'Boton',
+                        text: {},
+                        childrens: [
+                          {
+                            uuid: 'SLRbFSbT',
+                            css: '.image-plugin-SLRbFSbT {\n  display: block;\n  width: 20px;\n  height: 20px;\n  min-height: 20px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                            config: {
+                              image:
+                                'uploads/2026/octubre/562910ea74f9fb2eca8ff8807a768edc1.svg',
+                            },
+                            name: 'Imagen',
+                            text: {
+                              alt: 'ERHda8rXe6aCxiOP',
+                            },
+                            childrens: [],
+                            childrenSchema: [],
+                            kind: 'simple',
+                          },
+                          {
+                            uuid: '1FNUUDUJ',
+                            css: '.label-plugin-1FNUUDUJ {\n  display: flex;\n  width: 100%;\n  height: 20px;\n  min-height: 20px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-align: left;\n  text-transform: uppercase;\n  font-style: normal;\n  cursor: pointer;\n}',
+                            config: {},
+                            name: 'Etiqueta',
+                            text: {
+                              etiqueta: 'jvHda8rXe6aCxiML',
+                            },
+                            childrens: [],
+                            childrenSchema: [],
+                            kind: 'simple',
+                          },
+                        ],
+                        childrenSchema: [
+                          {
+                            uuid: 'SLRbFSbT',
+                            slot: 'image',
+                          },
+                          {
+                            uuid: '1FNUUDUJ',
+                            slot: 'title',
+                          },
+                        ],
+                        kind: 'composite',
                       },
                     },
                     {
@@ -250,6 +289,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           alt: '6ZDbcdTtVcFG7CB7',
                         },
+                        childrens: [],
                       },
                     },
                   ],
@@ -275,6 +315,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           etiqueta: 'dcfBJS8SClkNw2hb',
                         },
+                        childrens: [],
                       },
                     },
                   ],
@@ -308,6 +349,7 @@ export async function PageSeeder(): Promise<void> {
                         text: {
                           parrafo: 'TyhB6MstRNOtsOQq',
                         },
+                        childrens: [],
                       },
                     },
                     {
@@ -335,17 +377,53 @@ export async function PageSeeder(): Promise<void> {
                       },
                       element: {
                         uuid: 'KdxICG8T',
-                        css: '.button-plugin-KdxICG8T{   \n    width: auto;\n    display: flex; \n    align-items: center;\n    justify-content: center;\n    padding: 12px 30px;\n    font-size: 16px;\n    font-weight: 600;    \n    text-transform: uppercase;\n    background-color: #3498db;\n    color: white;\n    border: none;\n    border-radius: 50px;\n    text-align: center;\n    cursor: pointer;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    }\n    \n.button-plugin-KdxICG8T:hover { \n    background-color: #2980b9; \n    transform: translateY(-3px);\n    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);\n}\n\n.button-plugin-KdxICG8T:active {\n    transform: translateY(1px);\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}',
-                        name: 'Boton',
+                        css: '.button-plugin-KdxICG8T {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-KdxICG8T:hover {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale(0.98);\n  transition: all 0.3s ease;\n  cursor: pointer;\n}',
                         config: {
                           goTo: 'http://localhost:4200/es/home',
-                          target: '_self',
-                          image:
-                            'uploads\\2026\\octubre\\562910ea74f9fb2eca8ff8807a768edc1.svg',
+                          target: '_blank',
                         },
-                        text: {
-                          etiqueta: 'DDRVpRWQlaMGh0Wp',
-                        },
+                        name: 'Boton',
+                        text: {},
+                        childrens: [
+                          {
+                            uuid: 'SLRbFSbT',
+                            css: '.image-plugin-SLRbFSbT {\n  display: block;\n  width: 20px;\n  height: 20px;\n  min-height: 20px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                            config: {
+                              image:
+                                'uploads/2026/octubre/562910ea74f9fb2eca8ff8807a768edc1.svg',
+                            },
+                            name: 'Imagen',
+                            text: {
+                              alt: 'TYHda8rXe6aCxi3T',
+                            },
+                            childrens: [],
+                            childrenSchema: [],
+                            kind: 'simple',
+                          },
+                          {
+                            uuid: '1FNUUDUJ',
+                            css: '.label-plugin-1FNUUDUJ {\n  display: flex;\n  width: 100%;\n  height: 20px;\n  min-height: 20px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-align: left;\n  text-transform: uppercase;\n  font-style: normal;\n  cursor: pointer;\n}',
+                            config: {},
+                            name: 'Etiqueta',
+                            text: {
+                              etiqueta: 'DDRVpRWQlaMGh0Wp',
+                            },
+                            childrens: [],
+                            childrenSchema: [],
+                            kind: 'simple',
+                          },
+                        ],
+                        childrenSchema: [
+                          {
+                            uuid: 'SLRbFSbT',
+                            slot: 'image',
+                          },
+                          {
+                            uuid: '1FNUUDUJ',
+                            slot: 'title',
+                          },
+                        ],
+                        kind: 'composite',
                       },
                     },
                   ],
