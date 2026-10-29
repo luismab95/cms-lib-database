@@ -17,6 +17,10 @@ const ElementSchema = new Schema(
     uuid: {
       type: String,
     },
+    code: {
+      type: String,
+      default: '',
+    },
     css: {
       type: String,
       default: '',

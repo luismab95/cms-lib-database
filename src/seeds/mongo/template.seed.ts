@@ -25,31 +25,32 @@ export async function TemplateSeeder(): Promise<void> {
       _id: new Types.ObjectId('6accf4a0e9c6afe976f920c2'),
       data: {
         header: {
-          css: '.header {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  max-height: 10vh;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  background-color: #ffffff;\n}',
+          css: '.header { display: block; width: 100%; height: auto; min-height: 40px; max-height: 10vh; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: #ffffff; }',
           data: [
             {
               uuid: '8L9PGn1h',
-              css: '.grid-section-8L9PGn1h {\n  display: flex;\n  width: 100%;\n  height: auto;\n  flex-direction: column;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+              css: '.grid-section-8L9PGn1h { display: flex; width: 100%; height: auto; flex-direction: column; gap: 4px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }',
               config: {
                 backgroundImage: '',
               },
               rows: [
                 {
                   uuid: '74Q7X9OO',
-                  css: '.grid-row-74Q7X9OO {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 100px;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-74Q7X9OO {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-74Q7X9OO { display: flex; width: 100%; height: auto; min-height: 100px; flex-direction: column; justify-content: space-between; align-items: center; gap: 4px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: relative; }  @container (min-width: 834px) { .grid-row-74Q7X9OO {   flex-direction: row; } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'sffBv4wx',
-                      css: '.grid-column-sffBv4wx {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  justify-content: center;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-sffBv4wx { display: flex; width: 100%; height: auto; min-height: 40px; justify-content: center; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'YnXVjhnp',
-                        css: '.language-plugin-YnXVjhnp{\n display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding: 10px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n}',
+                        code: 'language',
+                        css: '.language-plugin-YnXVjhnp{display: block; width: 100%; height: auto; min-height: 40px; padding: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }',
                         name: 'Idiomas',
                         config: {
                           service: '/ms-cms/public/languages',
@@ -67,31 +68,32 @@ export async function TemplateSeeder(): Promise<void> {
           },
         },
         footer: {
-          css: '.footer {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  max-height: 10vh;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  justify-content: flex-start;\n  align-items: stretch;\n  align-content: stretch;\n  flex-grow: 0;\n  flex-shrink: 1;\n  flex-basis: auto;\n  flex: 0 1 auto;\n  align-self: auto;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  background-color: #ffffff;\n}',
+          css: '.footer { display: block; width: 100%; height: auto; min-height: 40px; max-height: 10vh; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: stretch; align-content: stretch; flex-grow: 0; flex-shrink: 1; flex-basis: auto; flex: 0 1 auto; align-self: auto; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: #ffffff; }',
           data: [
             {
               uuid: 'wjmk1p9i',
-              css: '.grid-section-wjmk1p9i {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  flex-direction: column;\n  justify-content: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+              css: '.grid-section-wjmk1p9i { display: flex; width: 100%; height: auto; min-height: 40px; flex-direction: column; justify-content: center; gap: 4px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }',
               config: {
                 backgroundImage: '',
               },
               rows: [
                 {
                   uuid: '91qWTzaJ',
-                  css: '.grid-row-91qWTzaJ {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-91qWTzaJ {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-91qWTzaJ { display: flex; width: 100%; height: auto; min-height: 40px; flex-direction: column; justify-content: center; align-items: center; gap: 4px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: relative; }  @container (min-width: 834px) { .grid-row-91qWTzaJ {   flex-direction: row; } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'lfdSrjlq',
-                      css: '.grid-column-lfdSrjlq {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  justify-content: center;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-lfdSrjlq { display: flex; width: 100%; height: auto; min-height: 40px; justify-content: center; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'UiptVbzD',
-                        css: '.image-plugin-UiptVbzD {\n  display: flex;\n  width: 90px;\n  height: 40px;\n  min-height: 40px;\n  justify-content: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n}',
+                        code: 'image',
+                        css: '.image-plugin-UiptVbzD { display: flex; width: auto; height: 50px; justify-content: center; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }',
                         name: 'Imagen',
                         config: {
                           image:

@@ -20,28 +20,28 @@ export async function PageSeeder(): Promise<void> {
       _id: new Types.ObjectId('6abc3e3612f90625347017ff'),
       data: {
         body: {
-          css: '.body {\n  display: flex;\n  width: 100%;\n height: auto;\n  min-height: 80vh;\n  max-height: 80vh;\n  flex-direction: column;\n  justify-content: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n background-color: #ffffff; \n}',
+          css: '.body {  display: flex;  width: 100%; height: auto;  min-height: 80vh;  max-height: 80vh;  flex-direction: column;  justify-content: center;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px; background-color: #ffffff;  }',
           config: {
             backgroundImage: '',
           },
           data: [
             {
               uuid: 'YGw7wWfX',
-              css: '.grid-section-YGw7wWfX {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 200px;\n  flex-direction: column;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+              css: '.grid-section-YGw7wWfX {  display: flex;  width: 100%;  height: auto;  min-height: 200px;  flex-direction: column;  gap: 4px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
               config: {
                 backgroundImage: '',
               },
               rows: [
                 {
                   uuid: 'doQVZ182',
-                  css: '.grid-row-doQVZ182 {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 100px;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-doQVZ182 {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-doQVZ182 {  display: flex;  width: 100%;  height: auto;  min-height: 100px;  flex-direction: column;  justify-content: space-between;  align-items: center;  gap: 4px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  position: relative; }  @container (min-width: 834px) {  .grid-row-doQVZ182 {    flex-direction: row;  } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'Odbi6wun',
-                      css: '.grid-column-Odbi6wun {\n  display: block;\n  width: 100%;\n  height: auto;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-Odbi6wun {  display: block;  width: 100%;  height: auto;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -49,13 +49,14 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'dMHLnvZj',
-                      css: '.grid-column-dMHLnvZj {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                      css: '.grid-column-dMHLnvZj {  display: flex;  width: 100%;  height: auto;  min-height: 40px;  flex-direction: row;  justify-content: center;  align-items: center;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'LwgODtkI',
-                        css: '.image-plugin-LwgODtkI {\n  display: block;\n  width: auto;\n  height: 80px;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                        code: 'image',
+                        css: '.image-plugin-LwgODtkI {  display: block;  width: auto;  height: 80px;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif; }',
                         name: 'Imagen',
                         config: {
                           image:
@@ -69,7 +70,7 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: '1ug7lLMT',
-                      css: '.grid-column-1ug7lLMT {\n  display: block;\n  width: 100%;\n  height: auto;\n padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-1ug7lLMT {  display: block;  width: 100%;  height: auto; padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -79,14 +80,14 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: 'ChkM3EEL',
-                  css: '.grid-row-ChkM3EEL {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 100px;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-ChkM3EEL {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-ChkM3EEL {  display: flex;  width: 100%;  height: auto;  min-height: 100px;  flex-direction: column;  justify-content: space-between;  align-items: center;  gap: 4px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  position: relative; }  @container (min-width: 834px) {  .grid-row-ChkM3EEL {    flex-direction: row;  } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: '1J3GRN0B',
-                      css: '.grid-column-1J3GRN0B {\n  display: block;\n  width: 100%;\n  height: auto;\n padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-1J3GRN0B {  display: block;  width: 100%;  height: auto; padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -94,13 +95,14 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'ksWwTJK7',
-                      css: '.grid-column-ksWwTJK7 {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-ksWwTJK7 {  display: block;  width: 100%;  height: auto;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'seWobl4V',
-                        css: '.label-plugin-seWobl4V {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Arial,sans-serif;\n  font-size: 2.5rem;\n  font-weight: 600;\n  line-height: 1.2;\n  text-align: center;\n}',
+                        code: 'label',
+                        css: '.label-plugin-seWobl4V {  display: block;  width: 100%;  height: auto;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Arial,sans-serif;  font-size: 2.5rem;  font-weight: 600;  line-height: 1.2;  text-align: center; }',
                         name: 'Etiqueta',
                         config: {},
                         text: {
@@ -111,7 +113,7 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'uzZeeDGx',
-                      css: '.grid-column-uzZeeDGx {\n  display: block;\n  width: 100%;\n  height: auto;\n padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}',
+                      css: '.grid-column-uzZeeDGx {  display: block;  width: 100%;  height: auto; padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -121,14 +123,14 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: '1PoMZadg',
-                  css: '.grid-row-1PoMZadg {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 100px;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-1PoMZadg {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-1PoMZadg {  display: flex;  width: 100%;  height: auto;  min-height: 100px;  flex-direction: column;  justify-content: space-between;  align-items: center;  gap: 4px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  position: relative; }  @container (min-width: 834px) {  .grid-row-1PoMZadg {    flex-direction: row;  } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'H6VsCrpX',
-                      css: '.grid-column-H6VsCrpX {\n  display: block;\n  width: 100%;\n  height: auto;\n padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}\n\n@container (min-width: 834px) {\n  .grid-column-H6VsCrpX {\n width: 30%; \n  }\n}',
+                      css: '.grid-column-H6VsCrpX {  display: block;  width: 100%;  height: auto; padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }  @container (min-width: 834px) {  .grid-column-H6VsCrpX { width: 30%;   } }',
                       config: {
                         backgroundImage: '',
                       },
@@ -136,13 +138,14 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'r16taFVz',
-                      css: '.grid-column-r16taFVz {\n  display: block;\n  width: 100%;\n  height: auto;\n min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}\n\n@container (min-width: 834px) {\n  .grid-column-r16taFVz {\n width: 40%; \n  }\n}',
+                      css: '.grid-column-r16taFVz {  display: block;  width: 100%;  height: auto; min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }  @container (min-width: 834px) {  .grid-column-r16taFVz { width: 40%;   } }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'BhpRrAIz',
-                        css: '.paragraph-plugin-BhpRrAIz {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  line-height: 1.5;\n  color: #000000;\n  text-align: justify;\n}',
+                        code: 'paragraph',
+                        css: '.paragraph-plugin-BhpRrAIz {  display: block;  width: 100%;  height: auto;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Arial,sans-serif;  font-size: 16px;  line-height: 1.5;  color: #000000;  text-align: justify; }',
                         name: 'Parrafo',
                         config: {},
                         text: {
@@ -153,7 +156,7 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'Nz0inpZn',
-                      css: '.grid-column-Nz0inpZn {\n  display: block;\n  width: 100%;\n  height: auto;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n}\n\n@container (min-width: 834px) {\n  .grid-column-Nz0inpZn {\n width: 30%; \n  }\n}',
+                      css: '.grid-column-Nz0inpZn {  display: block;  width: 100%;  height: auto;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px; }  @container (min-width: 834px) {  .grid-column-Nz0inpZn { width: 30%;   } }',
                       config: {
                         backgroundImage: '',
                       },
@@ -163,14 +166,14 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: 'oZn7094f',
-                  css: '.grid-row-oZn7094f {\n  display: flex;\n  width: 100%;\n  height: auto;\n  min-height: 100px;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  gap: 4px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  position: relative;\n}\n\n@container (min-width: 834px) {\n  .grid-row-oZn7094f {\n    flex-direction: row;\n  }\n}',
+                  css: '.grid-row-oZn7094f {  display: flex;  width: 100%;  height: auto;  min-height: 100px;  flex-direction: column;  justify-content: space-between;  align-items: center;  gap: 4px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  position: relative; }  @container (min-width: 834px) {  .grid-row-oZn7094f {    flex-direction: row;  } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'KbJkObrx',
-                      css: '.grid-column-KbJkObrx {\n  display: block;\n  width: 100%;\n  height: auto;\n   padding-top: 12px;\n  padding-right: 12px;\n  padding-bottom: 12px;\n  padding-left: 12px;\n}',
+                      css: '.grid-column-KbJkObrx {  display: block;  width: 100%;  height: auto;   padding-top: 12px;  padding-right: 12px;  padding-bottom: 12px;  padding-left: 12px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -178,13 +181,14 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'HTHlfQ3x',
-                      css: '.grid-column-HTHlfQ3x {\n  display: block;\n  width: 100%;\n  height: auto;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                      css: '.grid-column-HTHlfQ3x {  display: block;  width: 100%;  height: auto;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'gU5HfD6u',
-                        css: '.button-plugin-gU5HfD6u {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-gU5HfD6u:hover {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale(0.98);\n  transition: all 0.3s ease;\n  cursor: pointer;\n}',
+                        code: 'button',
+                        css: '.button-plugin-gU5HfD6u {  display: flex;  width: auto;  height: 42px;  min-height: 42px;  flex-direction: row;  justify-content: center;  align-items: center;  align-content: center;  align-self: center;  gap: 8px;  padding-top: 12px;  padding-right: 24px;  padding-bottom: 12px;  padding-left: 24px;  font-family: Inter,sans-serif;  background-color: #6200ea;  border-top-left-radius: 50px;  border-top-right-radius: 50px;  border-bottom-right-radius: 50px;  border-bottom-left-radius: 50px;  transform: scale;  transition: all 0.3s ease;  cursor: pointer; }  .button-plugin-gU5HfD6u:hover {  display: flex;  width: auto;  height: 42px;  min-height: 42px;  flex-direction: row;  justify-content: center;  align-items: center;  align-content: center;  align-self: center;  gap: 8px;  padding-top: 12px;  padding-right: 24px;  padding-bottom: 12px;  padding-left: 24px;  font-family: Inter,sans-serif;  background-color: #6200ea;  border-top-left-radius: 50px;  border-top-right-radius: 50px;  border-bottom-right-radius: 50px;  border-bottom-left-radius: 50px;  transform: scale(0.98);  transition: all 0.3s ease;  cursor: pointer; }',
                         config: {
                           goTo: 'http://localhost:4200/admin',
                           target: '_blank',
@@ -194,7 +198,8 @@ export async function PageSeeder(): Promise<void> {
                         childrens: [
                           {
                             uuid: 'SLRbFSbT',
-                            css: '.image-plugin-SLRbFSbT {\n  display: block;\n  width: 20px;\n  height: 20px;\n  min-height: 20px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                            code: 'image',
+                            css: '.image-plugin-SLRbFSbT {  display: block;  width: 20px;  height: 20px;  min-height: 20px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif; }',
                             config: {
                               image:
                                 'uploads/2026/octubre/562910ea74f9fb2eca8ff8807a768edc1.svg',
@@ -209,7 +214,8 @@ export async function PageSeeder(): Promise<void> {
                           },
                           {
                             uuid: '1FNUUDUJ',
-                            css: '.label-plugin-1FNUUDUJ {\n  display: flex;\n  width: 100%;\n  height: 20px;\n  min-height: 20px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-align: left;\n  text-transform: uppercase;\n  font-style: normal;\n  cursor: pointer;\n}',
+                            code: 'label',
+                            css: '.label-plugin-1FNUUDUJ {  display: flex;  width: 100%;  height: 20px;  min-height: 20px;  flex-direction: row;  justify-content: center;  align-items: center;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Arial,sans-serif;  font-size: 16px;  font-weight: 600;  color: #ffffff;  text-align: left;  text-transform: uppercase;  font-style: normal;  cursor: pointer; }',
                             config: {},
                             name: 'Etiqueta',
                             text: {
@@ -235,7 +241,7 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'Pjy7Zk4p',
-                      css: '.grid-column-Pjy7Zk4p {\n  display: block;\n  width: 100%;\n  height: auto;\n padding-top: 12px;\n  padding-right: 12px;\n  padding-bottom: 12px;\n  padding-left: 12px;\n}',
+                      css: '.grid-column-Pjy7Zk4p {  display: block;  width: 100%;  height: auto; padding-top: 12px;  padding-right: 12px;  padding-bottom: 12px;  padding-left: 12px; }',
                       config: {
                         backgroundImage: '',
                       },
@@ -253,14 +259,14 @@ export async function PageSeeder(): Promise<void> {
       _id: new Types.ObjectId('6acd1eda8391ac9c8d921a29'),
       data: {
         body: {
-          css: '.body {\n  display: flex;\n  width: 100%;\n height: auto;\n  min-height: 80vh;\n  max-height: 80vh;\n  flex-direction: column;\n  justify-content: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n background-color: #ffffff; \n}',
+          css: '.body {  display: flex;  width: 100%; height: auto;  min-height: 80vh;  max-height: 80vh;  flex-direction: column;  justify-content: center;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px; background-color: #ffffff;  }',
           config: {
             backgroundImage: '',
           },
           data: [
             {
               uuid: 'bse8ot4O',
-              css: '.grid-section-bse8ot4O {\n  display: block;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Inter,sans-serif;\n}',
+              css: '.grid-section-bse8ot4O {  display: block;  width: 100%;  height: 100%;  min-height: 40px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Inter,sans-serif; }',
               config: {
                 backgroundImage: '',
               },
@@ -274,13 +280,14 @@ export async function PageSeeder(): Promise<void> {
                   columns: [
                     {
                       uuid: 'ACaQyqQd',
-                      css: '.grid-column-ACaQyqQd{\n    padding: 12px 12px 12px 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}',
+                      css: '.grid-column-ACaQyqQd{    padding: 12px 12px 12px 12px;    width: 100%;    display: flex;    justify-content: center;    align-items: center; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'iYiG2pIy',
-                        css: '.image-plugin-iYiG2pIy{\n    width: 150px;\n    height: 80px;\n}',
+                        code: 'image',
+                        css: '.image-plugin-iYiG2pIy{    width: 150px;    height: 80px; }',
                         name: 'Imagen',
                         config: {
                           image:
@@ -296,20 +303,21 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: 'nFoZu070',
-                  css: '.grid-row-nFoZu070{\n    padding: 12px 12px 12px 12px;\n}',
+                  css: '.grid-row-nFoZu070{    padding: 12px 12px 12px 12px; }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'E4JGRozL',
-                      css: '.grid-column-E4JGRozL{\n    width: 100%;\n    display: flex; \n    justify-content: center; \n    align-items: center;\n}',
+                      css: '.grid-column-E4JGRozL{    width: 100%;    display: flex;     justify-content: center;     align-items: center; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'bOlubfIM',
-                        css: '.label-plugin-bOlubfIM{\n    font-size: 24px;\n    font-weight: 700;\n    text-align: center;\n    text-transform: uppercase;\n}',
+                        code: 'label',
+                        css: '.label-plugin-bOlubfIM{    font-size: 24px;    font-weight: 700;    text-align: center;    text-transform: uppercase; }',
                         name: 'Etiqueta',
                         config: {},
                         text: {
@@ -322,14 +330,14 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: 'JqA2OpPu',
-                  css: '.grid-row-JqA2OpPu {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 10px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Inter,sans-serif;\n}\n\n@container (min-width: 834px) {\n  .grid-row-JqA2OpPu {\n    flex-direction: row;\n    justify-content: space-between;\n  }\n}',
+                  css: '.grid-row-JqA2OpPu {  display: flex;  width: 100%;  height: 100%;  min-height: 40px;  flex-direction: column;  justify-content: center;  align-items: center;  margin-bottom: 10px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Inter,sans-serif; }  @container (min-width: 834px) {  .grid-row-JqA2OpPu {    flex-direction: row;    justify-content: space-between;  } }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'qtSFUOwK',
-                      css: '.grid-column-qtSFUOwK {\n  display: block;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Inter,sans-serif;\n}\n\n@container (min-width: 834px) {\n  .grid-column-qtSFUOwK {\n    width: 16.66%;\n  }\n}',
+                      css: '.grid-column-qtSFUOwK {  display: block;  width: 100%;  height: 100%;  min-height: 40px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Inter,sans-serif; }  @container (min-width: 834px) {  .grid-column-qtSFUOwK {    width: 16.66%;  } }',
                       config: {
                         backgroundImage: '',
                       },
@@ -337,13 +345,14 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'ABMs2zKV',
-                      css: '.grid-column-ABMs2zKV {\n  display: block;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Inter,sans-serif;\n}\n\n@container (min-width: 834px) {\n  .grid-column-ABMs2zKV {\n    width: 66.68%;\n  }\n}',
+                      css: '.grid-column-ABMs2zKV {  display: block;  width: 100%;  height: 100%;  min-height: 40px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Inter,sans-serif; }  @container (min-width: 834px) {  .grid-column-ABMs2zKV {    width: 66.68%;  } }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'oeKR3Q4s',
-                        css: '.paragraph-plugin-oeKR3Q4s {\n  display: block;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n  text-align: justify;\n}\n\n@container (min-width: 834px) {\n  .paragraph-plugin-oeKR3Q4s {\n    padding-top: 10px;\n    padding-right: 10px;\n    padding-bottom: 10px;\n    padding-left: 10px;\n  }\n}',
+                        code: 'paragraph',
+                        css: '.paragraph-plugin-oeKR3Q4s {  display: block;  width: 100%;  height: 100%;  min-height: 40px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif;  text-align: justify; }  @container (min-width: 834px) {  .paragraph-plugin-oeKR3Q4s {    padding-top: 10px;    padding-right: 10px;    padding-bottom: 10px;    padding-left: 10px;  } }',
                         name: 'Parrafo',
                         config: {},
                         text: {
@@ -354,7 +363,7 @@ export async function PageSeeder(): Promise<void> {
                     },
                     {
                       uuid: 'Utttz2Dq',
-                      css: '.grid-column-Utttz2Dq {\n  display: block;\n  width: 100%;\n  height: 100%;\n  min-height: 40px;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Inter,sans-serif;\n}\n\n@container (min-width: 834px) {\n  .grid-column-Utttz2Dq {\n    width: 16.66%;\n  }\n}',
+                      css: '.grid-column-Utttz2Dq {  display: block;  width: 100%;  height: 100%;  min-height: 40px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Inter,sans-serif; }  @container (min-width: 834px) {  .grid-column-Utttz2Dq {    width: 16.66%;  } }',
                       config: {
                         backgroundImage: '',
                       },
@@ -364,20 +373,21 @@ export async function PageSeeder(): Promise<void> {
                 },
                 {
                   uuid: 'mWjXlzUY',
-                  css: '.grid-row-mWjXlzUY{\n    margin-bottom: 10px;\n}',
+                  css: '.grid-row-mWjXlzUY{    margin-bottom: 10px; }',
                   config: {
                     backgroundImage: '',
                   },
                   columns: [
                     {
                       uuid: 'JLkz0350',
-                      css: '.grid-column-JLkz0350{\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}',
+                      css: '.grid-column-JLkz0350{    width: 100%;    display: flex;    justify-content: center;    align-items: center; }',
                       config: {
                         backgroundImage: '',
                       },
                       element: {
                         uuid: 'KdxICG8T',
-                        css: '.button-plugin-KdxICG8T {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.button-plugin-KdxICG8T:hover {\n  display: flex;\n  width: auto;\n  height: 42px;\n  min-height: 42px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  align-content: center;\n  align-self: center;\n  gap: 8px;\n  padding-top: 12px;\n  padding-right: 24px;\n  padding-bottom: 12px;\n  padding-left: 24px;\n  font-family: Inter,sans-serif;\n  background-color: #6200ea;\n  border-top-left-radius: 50px;\n  border-top-right-radius: 50px;\n  border-bottom-right-radius: 50px;\n  border-bottom-left-radius: 50px;\n  transform: scale(0.98);\n  transition: all 0.3s ease;\n  cursor: pointer;\n}',
+                        code: 'button',
+                        css: '.button-plugin-KdxICG8T {  display: flex;  width: auto;  height: 42px;  min-height: 42px;  flex-direction: row;  justify-content: center;  align-items: center;  align-content: center;  align-self: center;  gap: 8px;  padding-top: 12px;  padding-right: 24px;  padding-bottom: 12px;  padding-left: 24px;  font-family: Inter,sans-serif;  background-color: #6200ea;  border-top-left-radius: 50px;  border-top-right-radius: 50px;  border-bottom-right-radius: 50px;  border-bottom-left-radius: 50px;  transform: scale;  transition: all 0.3s ease;  cursor: pointer; }  .button-plugin-KdxICG8T:hover {  display: flex;  width: auto;  height: 42px;  min-height: 42px;  flex-direction: row;  justify-content: center;  align-items: center;  align-content: center;  align-self: center;  gap: 8px;  padding-top: 12px;  padding-right: 24px;  padding-bottom: 12px;  padding-left: 24px;  font-family: Inter,sans-serif;  background-color: #6200ea;  border-top-left-radius: 50px;  border-top-right-radius: 50px;  border-bottom-right-radius: 50px;  border-bottom-left-radius: 50px;  transform: scale(0.98);  transition: all 0.3s ease;  cursor: pointer; }',
                         config: {
                           goTo: 'http://localhost:4200/es/home',
                           target: '_blank',
@@ -387,7 +397,8 @@ export async function PageSeeder(): Promise<void> {
                         childrens: [
                           {
                             uuid: 'SLRbFSbT',
-                            css: '.image-plugin-SLRbFSbT {\n  display: block;\n  width: 20px;\n  height: 20px;\n  min-height: 20px;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  font-family: Inter,sans-serif;\n}',
+                            code: 'image',
+                            css: '.image-plugin-SLRbFSbT {  display: block;  width: 20px;  height: 20px;  min-height: 20px;  padding-top: 0px;  padding-right: 0px;  padding-bottom: 0px;  padding-left: 0px;  font-family: Inter,sans-serif; }',
                             config: {
                               image:
                                 'uploads/2026/octubre/562910ea74f9fb2eca8ff8807a768edc1.svg',
@@ -402,7 +413,8 @@ export async function PageSeeder(): Promise<void> {
                           },
                           {
                             uuid: '1FNUUDUJ',
-                            css: '.label-plugin-1FNUUDUJ {\n  display: flex;\n  width: 100%;\n  height: 20px;\n  min-height: 20px;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  padding-top: 10px;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  padding-left: 10px;\n  font-family: Arial,sans-serif;\n  font-size: 16px;\n  font-weight: 600;\n  color: #ffffff;\n  text-align: left;\n  text-transform: uppercase;\n  font-style: normal;\n  cursor: pointer;\n}',
+                            code: 'label',
+                            css: '.label-plugin-1FNUUDUJ {  display: flex;  width: 100%;  height: 20px;  min-height: 20px;  flex-direction: row;  justify-content: center;  align-items: center;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  font-family: Arial,sans-serif;  font-size: 16px;  font-weight: 600;  color: #ffffff;  text-align: left;  text-transform: uppercase;  font-style: normal;  cursor: pointer; }',
                             config: {},
                             name: 'Etiqueta',
                             text: {

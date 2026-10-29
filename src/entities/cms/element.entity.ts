@@ -11,6 +11,15 @@ export class Element {
 
   @Index({ unique: true })
   @Column({
+    name: 'code',
+    type: 'varchar',
+    unique: true,
+    nullable: false,
+  })
+  code: string;
+
+  @Index({ unique: true })
+  @Column({
     name: 'name',
     type: 'varchar',
     unique: true,
@@ -48,6 +57,13 @@ export class Element {
     nullable: false,
   })
   css: string;
+
+  @Column({
+    name: 'style',
+    type: 'varchar',
+    nullable: false,
+  })
+  style: string;
 
   @Column({
     name: 'config',
