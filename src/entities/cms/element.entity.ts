@@ -60,10 +60,10 @@ export class Element {
 
   @Column({
     name: 'style',
-    type: 'varchar',
+    type: 'json',
     nullable: false,
   })
-  style: string;
+  style: { [key: string]: string };
 
   @Column({
     name: 'config',
